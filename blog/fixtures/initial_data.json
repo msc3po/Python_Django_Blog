@@ -1,0 +1,56 @@
+[
+  {
+      "model": "auth.user",
+      "pk": 1,
+      "fields": {
+          "username": "john",
+          "first_name": "John",
+          "last_name": "Doe",
+          "email": "john.doe@example.com",
+          "password": "johnpassword",
+          "is_staff": false,
+          "is_active": true,
+          "is_superuser": false
+      }
+  },
+  {
+      "model": "blog.post",
+      "pk": 1,
+      "fields": {
+          "title": "My First Post",
+          "content": "This is the content of my first post.",
+          "published_date": "2023-10-04T10:00:00Z",
+          "author": 1
+      }
+  },
+  {
+      "model": "blog.post",
+      "pk": 2,
+      "fields": {
+          "title": "Exploring Django",
+          "content": "In this post, we'll explore the core features of Django and how it facilitates web development.",
+          "published_date": "2023-10-05T11:00:00Z",
+          "author": 1
+      }
+  },
+  {
+      "model": "blog.post",
+      "pk": 3,
+      "fields": {
+          "title": "Advanced Django Techniques",
+          "content": "Django offers a range of advanced techniques for web development. Let's delve into some of these methods.",
+          "published_date": "2023-10-06T12:00:00Z",
+          "author": 1
+      }
+  },
+  {
+      "model": "blog.post",
+      "pk": 4,
+      "fields": {
+          "title": "Django vs Flask",
+          "content": "Both Django and Flask are popular Python web frameworks. In this post, we'll compare their features and performance.",
+          "published_date": "2023-10-07T13:00:00Z",
+          "author": 1
+      }
+  }
+]
