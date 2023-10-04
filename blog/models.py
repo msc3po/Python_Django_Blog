@@ -11,4 +11,7 @@ class Post(models.Model):
      return self.title
 
 class Author(models.Model):
-   author_name = models.TextField(max_length= (80))
+   author_name = models.CharField(max_length= 20)
+   email = models.EmailField(null=True, blank=True)
+   bio = models.TextField(null=True, blank=True)
+   profile_picture = models.ImageField(upload_to= 'profile_pictures/', null=True, blank=True)
