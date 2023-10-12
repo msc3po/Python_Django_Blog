@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
+from django.views.generic import DetailView
 from .forms import PostForm
 from .models import Post
 
@@ -17,3 +18,10 @@ def create_post(request):
     else:
         form = PostForm()
     return render(request, 'blog/create_post.html', {'form': form})
+
+
+### refactor to a DetailView?
+def read_post(request, post_id):
+
+        post = get_object_or_404(Post, pk=post_id)
+        return render(request, 'blog/read_post.html', {'post': post})
